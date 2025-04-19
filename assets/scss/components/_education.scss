@@ -1,0 +1,24 @@
+.education {
+    // &__it
+        &__item {
+            @include avoid-break;
+
+        & > i {
+             color: $color-icon-primary;
+            font-size: 1.5rem;
+        }
+        & > span {
+            @if $direction == "ltr" {
+                padding-left: .5rem;
+            }
+            @else {
+                padding-right: .5rem;
+            }
+        }
+    }
+
+    &__bullet {
+        list-style-position: inside;
+        // list-style: disc !important;
+    }
+}

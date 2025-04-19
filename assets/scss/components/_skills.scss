@@ -1,0 +1,19 @@
+.skills {
+    &__group {
+        & li{
+            // &:not(:last-child)::after{
+            //     content: ", ",
+            // }
+            
+        }
+        & span {
+            font-weight: 700;
+            display: block;
+        }
+
+    } 
+    &__bullet {
+        list-style-position: inside;
+        list-style: disc !important;
+    }
+}

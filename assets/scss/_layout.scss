@@ -1,0 +1,59 @@
+.content {
+    position: relative;
+    overflow: hidden;
+
+    .left_info {
+        position: relative;
+        @if $direction == "ltr" {
+            float: left;
+        }
+        @else {
+            float: right;
+        }
+        width: $width-left-col;
+        height: 100%;
+    }
+    &__info {
+        background-color: $color-left-col-background;
+        padding: 1.5rem 2rem;
+    }
+
+    &__left {
+        padding: 3rem 4rem;
+    }
+
+    &__left_footer {
+        text-decoration: none;
+        @media screen {
+            &::after {
+                content: '2022 © Simple CV  |   GoHugo.io';
+                @if $direction == "ltr" {
+                    padding-left: 4rem;
+                }
+                @else {
+                    padding-right: 4rem;
+                }
+                height: 2rem;
+                width: 100%;
+                position: absolute;
+                bottom: 0.5rem;
+                color: darken($color-light, 30%);
+            }
+        }
+    }
+
+    &__right {
+        position: relative;
+        @if $direction == "ltr" {
+            float: right;
+        }
+        @else {
+            float: left;
+        }
+        width: $width-right-col;
+        color: $color-right-col-body-text;
+        height: 100%;
+        padding: 2rem 3rem;
+        right: 1rem;
+    }
+}

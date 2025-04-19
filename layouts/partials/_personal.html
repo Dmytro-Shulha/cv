@@ -1,0 +1,41 @@
+{{ if .Personal }}
+<div id="Personal" class="sideSection">
+    <div class="sideSection__heading">
+        <h2 class="sideSection__title">
+            {{ i18n "personal" }}
+        </h2>
+    </div>
+    <div class="sideSection__content">
+        <div class="">
+            {{ if .Personal.Gender }}
+                <div class="personal__group">
+                    <h3 class="personal__item">{{ i18n "gender"}}:</h3>
+                    <b>{{ .Personal.Gender | safeHTML }}</b>
+                </div>
+            {{ end }}
+            {{ if .Personal.Status }}
+                </br>
+                <div class="personal__group">
+                    <h3 class="personal__item">{{ i18n "birthDate"}}:</h3>
+                    <b>{{ .Personal.BirthDate | safeHTML }}</b>
+                </div>
+            {{ end }}
+            {{if .Status}}
+                </br>
+                <div class="personal__group">
+                    <h3 class="personal__item">{{ i18n "status"}}:</h3>
+                    <b>{{ .Status | safeHTML }}</b>
+                </div>
+            {{end}}
+
+            {{if .MaritalStatus}}
+                </br>
+                <div class="personal__group">
+                    <h3 class="personal__item">{{ i18n "maritalStatus"}}:</h3>
+                    <b>{{ .MaritalStatus | safeHTML }}</b>
+                </div>
+            {{end}}
+        </div>
+    </div>
+</div>
+{{ end }}

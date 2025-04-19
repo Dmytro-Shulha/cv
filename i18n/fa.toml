@@ -1,0 +1,32 @@
+[profile]
+other = "مشخصات"
+
+[experience]
+other = "سوابق کاری"
+
+[education]
+other = "تحصیلات"
+
+[skills]
+other = "مهارت ها"
+
+[projects]
+other = "پروژه ها"
+
+[relevantCourses]
+other = "دوره های مربوطه:"
+
+[personal]
+other = "مشخصات فردی"
+
+[gender]
+other = "جنسیت"
+
+[birthDate]
+other = "متولد"
+
+[status]
+other = "وضعیت"
+
+[maritalStatus]
+other = "وضعیت تأهل"

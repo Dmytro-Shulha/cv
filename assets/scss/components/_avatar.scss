@@ -1,0 +1,20 @@
+.avatar {
+    width: 100%;
+    height: 14rem;
+    position: relative;
+    overflow: hidden;
+
+    &__container {
+        @include hz-center;
+        width: 60%;
+        clip-path: circle(50% at 50% 56%);
+        height: 12rem;
+        text-align: center;
+    }
+
+    &__img {
+        object-fit: cover;
+        width: 100%;
+        @include all-center;
+    }
+}

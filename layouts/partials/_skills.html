@@ -1,0 +1,25 @@
+{{ if .Skills }}
+{{ $Dir := .Dir}}
+{{$len := len .Skills }}
+<div class="sideSection">
+    <div class="sideSection__heading">
+        <h2 class="sideSection__title">{{ i18n "skills" }}</h2>
+    </div>
+    <div class="sideSection__content">
+        <ul class="skills__group">
+            {{ range $index, $item := .Skills }}
+                <li class="skills__bullet">
+                    <span>{{ . | safeHTML }}
+                        {{if eq $Dir "ltr"}}
+                            {{if ne (add $index 1) $len}}
+                                ,
+                            {{end}}
+                        {{end}}
+                    </span>
+                </li>
+            {{ end }}
+        </ul>
+        </ul>
+    </div>
+</div>
+{{ end }}

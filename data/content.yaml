@@ -3,7 +3,7 @@ Dir: ltr # Left to Right Direction
 BasicInfo:
   FirstName: Dmytro
   LastName: Shulha
-  # Photo: img/avatar.jpg
+  Photo: img/avatar.jpg
   Contacts:
     - Icon: fas fa-envelope
       Info: dmytro.shulha@proton.me

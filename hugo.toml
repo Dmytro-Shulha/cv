@@ -1,7 +1,6 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'CV'
-theme = 'simple-cv'
 
 defaultContentLanguage = "en" # "en" or "fa"
 enableRobotsTXT = true

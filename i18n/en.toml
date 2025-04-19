@@ -1,0 +1,32 @@
+[profile]
+other = "Personal Info"
+
+[experience]
+other = "Work Experience"
+
+[education]
+other = "Education"
+
+[skills]
+other = "Skills"
+
+[projects]
+other = "Projects"
+
+[relevantCourses]
+other = "Relevant Courses"
+
+[personal]
+other= "Personal Info"
+
+[gender]
+other = "Gender"
+
+[birthDate]
+other = "Birth Date"
+
+[status]
+other = "Status"
+
+[maritalStatus]
+other = "Marital Status"
