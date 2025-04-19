@@ -1,0 +1,82 @@
+Dir: ltr # Left to Right Direction
+
+BasicInfo:
+  FirstName: Dmytro
+  LastName: Shulha
+  # Photo: img/avatar.jpg
+  Contacts:
+    - Icon: fas fa-envelope
+      Info: dmytro.shulha@proton.me
+      Link: true
+    # - Icon: fas fa-phone
+    #   Info: (+98) 935 957 8994
+      Link: false
+    - Icon: fas fa-map-marker-alt
+      Info: Lviv, Ukraine
+      Link: false 
+    - Icon: fab fa-linkedin-in
+      Info: linkedin.com/in/dmytro-shulha/
+      Link: true
+    - Icon: fab fa-github
+      Info: github.com/Dmytro-Shulha
+      Link: true
+
+Experience:
+  - Employer: ELEKS
+    Place: Lviv, Remote
+    Positions:
+      - Title: Back-end and Front-end Developer
+        Date: May 2021 - Current
+        Details:
+          - Programming
+        Badges: ['Node.js', 'GoLang', 'C#', 'JavaScript', 'Linux', 'ESXI', 'Docker', 'React Native', 'MongoDB', 'Git', 'HTML', 'CSS']
+      - Title: Software Engineer
+        Date: May 2020 - May 2021
+        Details:
+          - Also programming
+        Badges: ['Node.js', 'Linux', 'ESXI', 'Docker', 'React Native', 'MongoDB', 'Git', 'HTML', 'CSS']     
+
+
+
+ 
+
+Education:
+  - Degree: Bachelor in Physics
+    # FieldOfStudy: Physics
+    NameofSchool: Oles Honchar DNU
+    Location: Dnipro, Ukraine
+    Date: Sep 2014 - May 2018
+    RelevantCourses:
+      - Nonlinear Processes Modeling
+      - Quantum Mechanics
+  - Degree: Master in Theoretical Physics
+    NameOfSchool: Oles Honchar DNU
+    Location: Dnipro, Ukraine
+    Date: Sep 2018 - Jan 2020
+  - Degree: PhD
+    NameOfSchool: Lviv National Polytechnic University
+    Location: Lviv, Ukraine
+    Date: Sep 2022 - Current
+ 
+
+Profile: Software Developer with scientific background.
+
+Personal:
+    # Gender: Male
+    # BirthDate: 1990-10-05
+    # Status: Free to Work
+    # MaritalStatus: Single
+
+
+
+Skills:
+ - Linux | Docker | Git
+ - Node.js | JavaScript
+ - GoLang 
+ - Python
+ - Unity3D (C#)
+ - NoSQL | SQL
+ - CI/CD | Jenkins
+ - React.js | Next.js | AngularJs | Hugo
+ - React Native | Ionic
+ - HTML | CSS
