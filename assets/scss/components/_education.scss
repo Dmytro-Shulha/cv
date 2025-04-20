@@ -1,22 +1,61 @@
-.education {
-    // &__it
-        &__item {
-            @include avoid-break;
+[class^="education__"] > i {
+    font-size: 5rem;
+    min-width: 2rem;
+    justify-content: center;
+    align-items: center;
+}
 
-        & > i {
-             color: $color-icon-primary;
+.education {
+
+    // &__it
+    &__item {
+        @include avoid-break;
+        padding-left: 1rem;
+
+        &>i {
+            color: $color-icon-primary;
             font-size: 1.5rem;
         }
-        & > span {
-            @if $direction == "ltr" {
-                padding-left: .5rem;
+
+        &>span {
+            @if $direction =="ltr" {
+                padding-left: 0.5rem;
             }
+
             @else {
-                padding-right: .5rem;
+                padding-right: 0.5rem;
             }
         }
     }
 
+    &__title>i {
+        font-size: 1.5rem;
+    }
+
+    &__location {
+        color: $color-icon-secondary;
+
+        &>i {
+            color: $color-icon-primary;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__degree {
+        padding-left: 1rem;
+        &>i {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__date {
+        color: $color-icon-primary;
+        padding-left: 2.5rem;
+        &>i {
+            color: $color-icon-primary;
+            font-size: 1.5rem;
+        }
+    }
     &__bullet {
         list-style-position: inside;
         // list-style: disc !important;

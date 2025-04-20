@@ -1,13 +1,13 @@
-{{ if .Skills }}
+{{ if .Interests }}
 {{ $Dir := .Dir}}
 {{$len := len .Skills }}
 <div class="sideSection">
     <div class="sideSection__heading">
-        <h2 class="sideSection__title">{{ i18n "skills" }}</h2>
+        <h2 class="sideSection__title">{{ i18n "interests" }}</h2>
     </div>
     <div class="sideSection__content">
         <ul class="skills__group">
-            {{ range $index, $item := .Skills }}
+            {{ range $index, $item := .Interests }}
                 <li class="skills__bullet">
                     <span>{{ $item | safeHTML }}</span>
                 </li>

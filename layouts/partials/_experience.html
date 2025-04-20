@@ -9,9 +9,14 @@
             <div class="experience__item">
                 <div class="experience__header">
                     <h3 class="experience__company">
-                        <i class="fa fa-circle" aria-hidden="true"></i>{{ .Employer | safeHTML }}
+                        <i class='{{ default "far fa-building" .Icon }}' aria-hidden="true"></i>
+                        {{ .Employer | safeHTML }}
                     </h3>
-                    <h3 class="experience__place">{{ .Place | safeHTML }}</h3>
+                    {{if .Place }}
+                    <h3 class="experience__place">
+                        {{ .Place | safeHTML }}
+                    </h3>
+                    {{ end }}
                 </div>
                 {{ range .Positions }}
                 <div class="experience__job">
@@ -19,7 +24,9 @@
                         <h3 class="experience__position">
                             {{ .Title | safeHTML}}
                         </h3>
-                        <h3 class="experience__date">{{ .Date | safeHTML }}</h3>
+                        <h3 class="experience__date">
+                            {{ .Date | safeHTML }}
+                        </h3>
                     </div>
                     <ul>
                         {{ range .Details }}

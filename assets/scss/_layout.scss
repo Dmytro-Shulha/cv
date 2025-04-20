@@ -26,7 +26,7 @@
         text-decoration: none;
         @media screen {
             &::after {
-                content: '2022 © Simple CV  |   GoHugo.io';
+                content: '2022 © Simple CV | GoHugo.io';
                 @if $direction == "ltr" {
                     padding-left: 4rem;
                 }

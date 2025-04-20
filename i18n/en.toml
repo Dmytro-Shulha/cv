@@ -10,6 +10,9 @@ other = "Education"
 [skills]
 other = "Skills"
 
+[interests]
+other = "Interests"
+
 [projects]
 other = "Projects"
 

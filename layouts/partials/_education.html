@@ -7,25 +7,54 @@
     </div>
     <div class="sideSection__content">
         {{ range .Education }}
-            <div class="">
-                <h4 class="education__degree">{{ .Degree | safeHTML }}</h4>
-                <h4 class="education__description">{{ .FieldOfStudy | safeHTML }}</h4>
-                <h3 class="education__title">{{ .NameofSchool | safeHTML }}</h3>
-                <h4 class="education__item">
-                    <i class="fa fa-calendar-alt"></i><span>{{ .Date | safeHTML }}</span>
-                </h4>
-                <h4 class="education__item">
-                    <i class="fa fa-map-marker-alt"></i><span>{{ .Location | safeHTML }}</span>
-                </h4>
-                {{if .RelevantCourses}}
-                    <h3>{{ i18n "relevantCourses" }}</h3>
-                    <ul class="education__item">
-                        {{range .RelevantCourses}}
-                            <li class="education__bullet"></li>-<span>{{ . }}</span>
-                        {{end}} 
-                    </ul>
+        <div class="">
+
+            {{ if .NameOfSchool}}
+            <h4 class="education__title">
+                <i class="fa fa-university"></i>
+                {{ .NameOfSchool | safeHTML }}
+            </h4>
+            {{ end }}
+
+            {{ if .Location}}
+            <h4 class="education__location">
+                <i class="fa fa-map-marker-alt"></i>
+                <span>{{ .Location | safeHTML }}</span>
+            </h4>
+            {{ end }}
+
+            {{ if .Degree }}
+            <h4 class="education__degree">
+                <i class="fa fa-graduation-cap"></i>
+                {{ .Degree | safeHTML }}
+            </h4>
+            {{ end }}
+
+            {{ if .FieldOfStudy }}
+            <h4 class="education__description">
+                {{ .FieldOfStudy | safeHTML }}
+            </h4>
+            {{ end }}
+            
+            {{ if .Date }}
+            <h4 class="education__date">
+                <i class="fa fa-calendar-alt"></i>
+                <span>{{ .Date | safeHTML }}</span>
+            </h4>
+            {{ end }}
+
+            {{if .RelevantCourses}}
+            <h3>{{ i18n "relevantCourses" }}</h3>
+            <ul class="education__item">
+                {{range .RelevantCourses}}
+                <li class="education__bullet">
+                    <span>- {{ . }}</span>
+                </li>
                 {{end}}
-            </div>
+            </ul>
+            {{end}}
+
+        </div>
         {{ end }}
     </div>
 </div>

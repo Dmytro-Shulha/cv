@@ -8,9 +8,6 @@ BasicInfo:
     - Icon: fas fa-envelope
       Info: dmytro.shulha@proton.me
       Link: true
-    # - Icon: fas fa-phone
-    #   Info: (+98) 935 957 8994
-      Link: false
     - Icon: fas fa-map-marker-alt
       Info: Lviv, Ukraine
       Link: false 
@@ -23,40 +20,112 @@ BasicInfo:
 
 Experience:
   - Employer: ELEKS
-    Place: Lviv, Remote
+    Place: Lviv, Ukraine
     Positions:
-      - Title: Back-end and Front-end Developer
-        Date: May 2021 - Current
+      - Title: Senior Java Software Developer
+        Date: Mar 2025 - Current
         Details:
-          - Programming
-        Badges: ['Node.js', 'GoLang', 'C#', 'JavaScript', 'Linux', 'ESXI', 'Docker', 'React Native', 'MongoDB', 'Git', 'HTML', 'CSS']
-      - Title: Software Engineer
-        Date: May 2020 - May 2021
+          - Passed the assessment required for promotion.
+      - Title: Project 3 - Integration Developer
+        Date: Sep 2023 - Current
         Details:
-          - Also programming
-        Badges: ['Node.js', 'Linux', 'ESXI', 'Docker', 'React Native', 'MongoDB', 'Git', 'HTML', 'CSS']     
+          - Project - US-based Learning Management System (LMS) platform
+          - Responsible for API integrations with various client and third-party systems.
+          - Using Workato platform as middleware for automated migration of terabytes-large data chunks between platforms.
+          - Developing XSLT scripts for data transformation.
+          - Developing React-based SPA for CSV reports generation.
+          - Refactoring legacy collection of SPAs into single monorepo with ability to select, configure and deploy each SPA individually on-demand.
+          - Performing lightweight DevOps tasks to handle creating and maintaining infrastructure following an established playbook.
+        Badges: [React, Redux, Vite, AntDesign, clack/prompts, StoryBook, Swagger, OpenAPI, Workato, Groovy, DataDog, Git, HTML, CSS]
+      - Title: Project 2
+        Date: Mar 2022 - Jun 2023
+        Details:
+          - Project - Custom client-server solution for data flow management.
+          - Responsible for implementing new features and maintaining existing ones.
+          - Developing custom data flow scripts (converting files, generating reports, automating delivery to multiple destinations, etc.) using Project's custom solution.
+        Badges: [Java 11, Perforce, AWS Workspaces, DBeaver]
+      - Title: Project 1
+        Date: May 2021 - Mar 2022
+        Details:
+          - Project - Invoice processing and management system for US-based bank.
+          - Establishing third-party API usage for invoice processing using SOAP, async REST and Kafka messaging protocols.
+          - Migrating Hazelcast cache architecture from embedded to dedicated cache server.
+          - Investigating prod incidents and providing solutions for them.
+          - Upgrading Java version from 8 to 11.
+        Badges: [Java 8, Java 11, Spring, Hazelcast, Kafka, SOAP, REST, Git, Maven, Gradle, GraphQL]
+      - Title: Java Software Developer
+        Date: May 2021 - Feb 2025
+        Details:
+          - Passed all the interview stages and was offered a position.
+  - Employer: Luxoft
+    Place: Dnipro, Ukraine
+    Positions:
+      - Title: Junior Java FullStack Engineer
+        Date: Apr 2020 - May 2021
+        Details:
+          - Project - European bank's platform for trading data analytics and risk management.
+          - Responsible for both backend and frontend development.
+          - Implementing data filtering and aggregation features.
+          - Implenmenting data visualization features using React, D3.js and Plotly.js.
+          - Maintaining codebase for better consistency.
+          - Resolving production issues.
+          - Participating in planning for the next development iterations.
+        Badges: [Java 8, Spring, JGiven, JBehave, Maven, Linux, Docker, Jenkins, Tomcat, React, Redux, D3, Plotly, Git]
+  - Employer: Liceum "Samara"
+    Place: Dnipro, Ukraine
+    Positions: 
+      - Title: Middle School Teacher
+        Date: Sep 2018 - Apr 2020
+        Details:
+          - Teaching Physics and Computer Science to 7-8th grade students.
+          - Conducting lessons, preparing lesson plans, and evaluating students' progress on biweekly basis.
+          - Preparing students for the Olympiads in Physics and CS.
+          - Organizing and conducting extracurricular activities.
+          - Developing and maintaining the school's website.
+          - Participating in the school's management and development.
+          - Participating in the school's community and events.
+        Badges: [Teaching, Physics, Computer Science, HTML, CSS, JavaScript, C++]
+  - Employer: Planexta
+    Place: Dnipro, Ukraine
+    Positions:
+      - Title: Junior Software Engineer
+        Date: Sept 2016 - May 2018
+        Details:
+          - Project - Clinical decision support system for Electro-cardiogram (ECG) data analysis measured by both stationary medical devices and in-house manufactured wearable devices.
+          - Responsible for implementing ECG annotation algorithms for feature extraction, medical parameters precise calculation, and Heart Rate Variability (HRV) analysis.
+          - Processing collected data according to the medical standards.
+          - Encapsulating ECG data processing algorithms into a library for further usage in several products - Web app, Android app, iOS app.
+          - Got some experience with hardware low-level programming for measuring and processing signals from optical and electrical sensors.
+        Badges: [Java 8, Linux, Docker, MongoDB, Git, HTML, CSS]
+  - Employer: Scientific Background
+    Icon: fa fa-atom
+    Positions:
+      - Details:
+          - Participated in several scientific projects related to the development of new methods for data analysis and modeling of complex systems.
+          - Conducted research in the field of nonlinear dynamics and chaos theory.
+          - Published several papers in scientific journals and presented at conferences.
+          - Collaborated with other researchers and institutions on various projects.
+        Badges: [Research, Data Analysis, Modeling, Nonlinear Dynamics, Chaos Theory]
+
 
 
 
  
 
 Education:
-  - Degree: Bachelor in Physics
-    # FieldOfStudy: Physics
-    NameofSchool: Oles Honchar DNU
+  - NameOfSchool: Oles Honchar DNU
     Location: Dnipro, Ukraine
+    Degree: Bachelor in Physics
     Date: Sep 2014 - May 2018
-    RelevantCourses:
-      - Nonlinear Processes Modeling
-      - Quantum Mechanics
   - Degree: Master in Theoretical Physics
-    NameOfSchool: Oles Honchar DNU
-    Location: Dnipro, Ukraine
     Date: Sep 2018 - Jan 2020
-  - Degree: PhD
+  - Degree: PhD in Applied Physics
     NameOfSchool: Lviv National Polytechnic University
     Location: Lviv, Ukraine
     Date: Sep 2022 - Current
+    RelevantCourses:
+      - Nonlinear Processes Modeling
+      - Quantum Mechanics
  
 
 Profile: Software Developer with scientific background.
@@ -70,13 +139,21 @@ Personal:
 
 
 Skills:
- - Linux | Docker | Git
- - Node.js | JavaScript
- - GoLang 
- - Python
- - Unity3D (C#)
+ - Java (since 2013)
+ - Spring | Hibernate | Maven | 
+ - Groovy | Gradle
+ - JavaScript | TypeScript (since 2020)
+ - Node | React | Svelte | Hugo
+ - Tauri | Rust
+ - HTML | CSS
+ - Workato | Ruby | Python
+ - Linux | WSL | Docker
+ - Windows | Bash | Zsh | Git 
  - NoSQL | SQL
  - CI/CD | Jenkins
- - React.js | Next.js | AngularJs | Hugo
- - React Native | Ionic
- - HTML | CSS
+
+
+Interests:
+  - Mechanical Keyboards (Keychron, NiZ)
+  - Knowledge Management (Obsidian)
+  
