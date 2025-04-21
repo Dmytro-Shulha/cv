@@ -14,7 +14,12 @@
                     </h3>
                     {{if .Place }}
                     <h3 class="experience__place">
-                        {{ .Place | safeHTML }}
+                        <span class="experience__duration">
+                            5y 6m
+                        </span>
+                        <span class="experience__place__name">
+                            {{ .Place | safeHTML }}
+                        </span>
                     </h3>
                     {{ end }}
                 </div>
@@ -24,9 +29,13 @@
                         <h3 class="experience__position">
                             {{ .Title | safeHTML}}
                         </h3>
+                        {{ if .Date }}
                         <h3 class="experience__date">
-                            {{ .Date | safeHTML }}
+                            <span class="experience__date__duration"></span>
+                            <span class="experience__date__start">{{ .Date.Start | safeHTML }}</span> - 
+                            <span class="experience__date__end">{{ .Date.End | safeHTML }}</span>
                         </h3>
+                        {{ end }}
                     </div>
                     <ul>
                         {{ range .Details }}

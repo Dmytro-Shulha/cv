@@ -1,0 +1,11 @@
+{{/* layouts/partials/duration.html */}}
+{{- $start := time.AsTime .Start "Etc/UTC" | time.Format "Mar 2020" -}}
+{{/*  {{- $end   := time.AsTime .End   "Etc/UTC" | time.Format "Mar 2020" -}}  */}}
+{{- $end   := cond (isset . "end") (time.AsTime .End | time.Format "Mar 2020") (time.Now) -}}
+{{- $y  := sub ($end.Year)  ($start.Year)  -}}
+{{- $m  := sub ($end.Month) ($start.Month) -}}
+{{- if lt $m 0 -}}
+  {{- $y  = sub $y 1 -}}
+  {{- $m  = add $m 12 -}}
+{{- end -}}
+{{- printf "%d y %d m" $y $m -}}

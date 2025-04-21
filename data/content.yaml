@@ -23,11 +23,15 @@ Experience:
     Place: Lviv, Ukraine
     Positions:
       - Title: Senior Java Software Developer
-        Date: Mar 2025 - Current
+        Date: 
+          Start: Mar 2025
+          End: Current
         Details:
           - Passed the assessment required for promotion.
       - Title: Project 3 - Integration Developer
-        Date: Sep 2023 - Current
+        Date:
+          Start: Sep 2023
+          End: Current
         Details:
           - Project - US-based Learning Management System (LMS) platform
           - Responsible for API integrations with various client and third-party systems.
@@ -38,14 +42,18 @@ Experience:
           - Performing lightweight DevOps tasks to handle creating and maintaining infrastructure following an established playbook.
         Badges: [React, Redux, Vite, AntDesign, clack/prompts, StoryBook, Swagger, OpenAPI, Workato, Groovy, DataDog, Git, HTML, CSS]
       - Title: Project 2
-        Date: Mar 2022 - Jun 2023
+        Date: 
+          Start: Mar 2022
+          End: Jun 2023
         Details:
           - Project - Custom client-server solution for data flow management.
           - Responsible for implementing new features and maintaining existing ones.
           - Developing custom data flow scripts (converting files, generating reports, automating delivery to multiple destinations, etc.) using Project's custom solution.
         Badges: [Java 11, Perforce, AWS Workspaces, DBeaver]
       - Title: Project 1
-        Date: May 2021 - Mar 2022
+        Date: 
+          Start: May 2021
+          End: Mar 2022
         Details:
           - Project - Invoice processing and management system for US-based bank.
           - Establishing third-party API usage for invoice processing using SOAP, async REST and Kafka messaging protocols.
@@ -54,14 +62,18 @@ Experience:
           - Upgrading Java version from 8 to 11.
         Badges: [Java 8, Java 11, Spring, Hazelcast, Kafka, SOAP, REST, Git, Maven, Gradle, GraphQL]
       - Title: Java Software Developer
-        Date: May 2021 - Feb 2025
+        Date: 
+          Start: May 2021
+          End: Feb 2025
         Details:
           - Passed all the interview stages and was offered a position.
   - Employer: Luxoft
     Place: Dnipro, Ukraine
     Positions:
       - Title: Junior Java FullStack Engineer
-        Date: Apr 2020 - May 2021
+        Date: 
+          Start: Apr 2020
+          End: May 2021
         Details:
           - Project - European bank's platform for trading data analytics and risk management.
           - Responsible for both backend and frontend development.
@@ -72,10 +84,13 @@ Experience:
           - Participating in planning for the next development iterations.
         Badges: [Java 8, Spring, JGiven, JBehave, Maven, Linux, Docker, Jenkins, Tomcat, React, Redux, D3, Plotly, Git]
   - Employer: Liceum "Samara"
+    Icon: fas fa-school
     Place: Dnipro, Ukraine
     Positions: 
       - Title: Middle School Teacher
-        Date: Sep 2018 - Apr 2020
+        Date: 
+          Start: Sep 2018
+          End: Apr 2020
         Details:
           - Teaching Physics and Computer Science to 7-8th grade students.
           - Conducting lessons, preparing lesson plans, and evaluating students' progress on biweekly basis.
@@ -89,7 +104,9 @@ Experience:
     Place: Dnipro, Ukraine
     Positions:
       - Title: Junior Software Engineer
-        Date: Sept 2016 - May 2018
+        Date: 
+          Start: Sep 2016
+          End: May 2018
         Details:
           - Project - Clinical decision support system for Electro-cardiogram (ECG) data analysis measured by both stationary medical devices and in-house manufactured wearable devices.
           - Responsible for implementing ECG annotation algorithms for feature extraction, medical parameters precise calculation, and Heart Rate Variability (HRV) analysis.
@@ -113,16 +130,16 @@ Experience:
  
 
 Education:
-  - NameOfSchool: Oles Honchar DNU
-    Location: Dnipro, Ukraine
-    Degree: Bachelor in Physics
-    Date: Sep 2014 - May 2018
-  - Degree: Master in Theoretical Physics
-    Date: Sep 2018 - Jan 2020
-  - Degree: PhD in Applied Physics
-    NameOfSchool: Lviv National Polytechnic University
+  - NameOfSchool: Lviv National Polytechnic University
+    Degree: PhD in Applied Physics
     Location: Lviv, Ukraine
     Date: Sep 2022 - Current
+  - NameOfSchool: Oles Honchar DNU
+    Location: Dnipro, Ukraine
+    Degree: Master in Theoretical Physics
+    Date: Sep 2018 - Jan 2020
+  - Degree: Bachelor in Physics
+    Date: Sep 2014 - May 2018
     RelevantCourses:
       - Nonlinear Processes Modeling
       - Quantum Mechanics
@@ -149,8 +166,9 @@ Skills:
  - Workato | Ruby | Python
  - Linux | WSL | Docker
  - Windows | Bash | Zsh | Git 
- - NoSQL | SQL
- - CI/CD | Jenkins
+ - PostgreSQL | SQLite | MongoDB
+ - Hazelcast
+ - CI/CD | Jenkins | CodeBerg Pages
 
 
 Interests:
