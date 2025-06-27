@@ -1,3 +1,6 @@
+{{ if .Profile}}
+    {{.Profile | safeHTML }}
+{{end}}
 {{ if .Personal }}
 <div id="Personal" class="sideSection">
     <div class="sideSection__heading">
@@ -14,14 +17,14 @@
                 </div>
             {{ end }}
             {{ if .Personal.Status }}
-                </br>
+                <br/>
                 <div class="personal__group">
                     <h3 class="personal__item">{{ i18n "birthDate"}}:</h3>
                     <b>{{ .Personal.BirthDate | safeHTML }}</b>
                 </div>
             {{ end }}
             {{if .Status}}
-                </br>
+                <br/>
                 <div class="personal__group">
                     <h3 class="personal__item">{{ i18n "status"}}:</h3>
                     <b>{{ .Status | safeHTML }}</b>
@@ -29,7 +32,7 @@
             {{end}}
 
             {{if .MaritalStatus}}
-                </br>
+                <br/>
                 <div class="personal__group">
                     <h3 class="personal__item">{{ i18n "maritalStatus"}}:</h3>
                     <b>{{ .MaritalStatus | safeHTML }}</b>

@@ -1,0 +1,19 @@
+<pre class="mermaid">
+---
+config:
+    theme: neutral
+    gantt:
+        useWidth: 600 # for experience and education 
+        rightPadding: 2
+        topPadding: 45
+        topAxis: true
+---
+gantt
+dateFormat  MMM YYYY
+axisFormat  %Y
+{{ range .Experience }}{{if .Place}}
+section {{ .Employer | plainify }}{{ range .Positions }}{{ if .Date}}
+    {{ .Title | plainify }} : {{ .Date.Start }}, {{ cond (eq .Date.End "Current") (now.Format "Jan 2006") .Date.End }} {{/*  {{ default (now.Format "Jan 2006") .Date.End }}  */}}{{ end }}{{ end }}{{ end }}{{end}}{{ range .Education }}
+{{ if .NameOfSchool_Short}}section {{.NameOfSchool_Short}}{{ else if .NameOfSchool}}section {{ .NameOfSchool }}{{ end }}
+    {{ .Degree | plainify }} : {{ .Date.Start }}, {{ cond (eq .Date.End "Current") (now.Format "Jan 2006") .Date.End }}{{ end }}
+</pre>

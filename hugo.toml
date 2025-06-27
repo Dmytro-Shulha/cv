@@ -21,3 +21,7 @@ colorLeftColumnBackground = "#333"
 colorRightColumnHeadingText = "#666"
 colorRightColumnBodyText = "#666"
 pages = 1
+
+[mediaTypes.'text/javascript']
+    delimiter = '.'
+    suffixes = ['js', 'jsm', 'mjs']

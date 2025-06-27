@@ -39,7 +39,7 @@
             {{ if .Date }}
             <h4 class="education__date">
                 <i class="fa fa-calendar-alt"></i>
-                <span>{{ .Date | safeHTML }}</span>
+                <span>{{ .Date.Start | safeHTML }} - {{ .Date.End | safeHTML }}</span>
             </h4>
             {{ end }}
 

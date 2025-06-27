@@ -1,4 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
+    let mermaid = import('https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs');
+    // let mermaid = import('./deps/mermaid.esm.min.mjs');
+    mermaid.initialize({ startOnLoad: true });
+
+    console.log('Mermaid initialized');
+
     var DateTime = luxon.DateTime;
     var Duration = luxon.Duration;
 
@@ -15,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const endDate = DateTime.fromFormat((!end || end === 'Current') ? currentDate : end, "MMM yyyy", { locale: "en" }).plus({ months: 1 });
 
             let durationDiff = endDate?.diff(startDate, ['years', 'months']);
-            console.log(durationDiff);
+            console.log('durationDiff', durationDiff);
             durationDiff = durationDiff.toFormat(`${durationDiff.years >= 1 ? "y'y' " : ""}${durationDiff.months >= 1 ? "M'm'" : ""}`);
             if (experienceDateWrapper.length > 1) {
                 position.querySelector(".experience__date__duration").textContent = `${durationDiff} ~ `;

@@ -1,5 +1,6 @@
 {{ if .Experience }}
 <div id="experience" class="section">
+    {{ partial "_gantt.html" . }}
     <div class="section__heading">
         <h2 class="section__title">{{ i18n "experience" }}</h2>
     </div>
@@ -32,7 +33,7 @@
                         {{ if .Date }}
                         <h3 class="experience__date">
                             <span class="experience__date__duration"></span>
-                            <span class="experience__date__start">{{ .Date.Start | safeHTML }}</span> - 
+                            <span class="experience__date__start">{{ .Date.Start | safeHTML }}</span> -
                             <span class="experience__date__end">{{ .Date.End | safeHTML }}</span>
                         </h3>
                         {{ end }}

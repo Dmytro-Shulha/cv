@@ -131,21 +131,29 @@ Experience:
 
 Education:
   - NameOfSchool: Lviv National Polytechnic University
+    NameOfSchool_Short: LPNU
     Degree: PhD in Applied Physics
     Location: Lviv, Ukraine
-    Date: Sep 2022 - Current
+    Date:
+      Start: Sep 2022
+      End: Current
   - NameOfSchool: Oles Honchar DNU
+    NameOfSchool_Short: DNU
     Location: Dnipro, Ukraine
     Degree: Master in Theoretical Physics
-    Date: Sep 2018 - Jan 2020
+    Date:
+      Start: Sep 2018
+      End: Jan 2020
   - Degree: Bachelor in Physics
-    Date: Sep 2014 - May 2018
+    Date:
+      Start: Sep 2014
+      End: May 2018
     RelevantCourses:
       - Nonlinear Processes Modeling
       - Quantum Mechanics
  
 
-Profile: Software Developer with scientific background.
+Profile: Software Developer with <br/> scientific background.
 
 Personal:
     # Gender: Male
