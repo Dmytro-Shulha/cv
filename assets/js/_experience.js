@@ -1,6 +1,6 @@
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+// import mermaid from './deps/mermaid.esm.min.mjs';
 document.addEventListener("DOMContentLoaded", () => {
-    let mermaid = import('https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs');
-    // let mermaid = import('./deps/mermaid.esm.min.mjs');
     mermaid.initialize({ startOnLoad: true });
 
     console.log('Mermaid initialized');
