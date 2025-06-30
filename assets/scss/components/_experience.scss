@@ -14,8 +14,17 @@
         height: 2.4rem;
     }
 
+    &__header {
+        margin-bottom: 0.6em;
+    }
+
+    &__subheader {
+        margin-bottom: 0.2em;
+    }
+
     &__job {
         position: relative;
+        margin-bottom: 0.5em;
         @if $direction == "ltr" {
             padding-left: 2.5rem;
         }

@@ -28,17 +28,19 @@ Experience:
           End: Current
         Details:
           - Passed the assessment required for promotion.
+          - Hard/Soft Skills + English Level were evaluated.
       - Title: Project 3 - Integration Developer
         Date:
           Start: Sep 2023
           End: Current
         Details:
-          - Project - US-based Learning Management System (LMS) platform
+          - Project - US-based Learning Management System (LMS) platform.
           - Responsible for API integrations with various client and third-party systems.
           - Using Workato platform as middleware for automated migration of terabytes-large data chunks between platforms.
           - Developing XSLT scripts for data transformation.
           - Developing React-based SPA for CSV reports generation.
           - Refactoring legacy collection of SPAs into single monorepo with ability to select, configure and deploy each SPA individually on-demand.
+          - Create TUI for CLI-based user interaction.
           - Performing lightweight DevOps tasks to handle creating and maintaining infrastructure following an established playbook.
         Badges: [React, Redux, Vite, AntDesign, clack/prompts, StoryBook, Swagger, OpenAPI, Workato, Groovy, DataDog, Git, HTML, CSS]
       - Title: Project 2
@@ -58,9 +60,9 @@ Experience:
           - Project - Invoice processing and management system for US-based bank.
           - Establishing third-party API usage for invoice processing using SOAP, async REST and Kafka messaging protocols.
           - Migrating Hazelcast cache architecture from embedded to dedicated cache server.
-          - Investigating prod incidents and providing solutions for them.
+          - Investigating prod incidents, providing and deploying solutions.
           - Upgrading Java version from 8 to 11.
-        Badges: [Java 8, Java 11, Spring, Hazelcast, Kafka, SOAP, REST, Git, Maven, Gradle, GraphQL]
+        Badges: [Java 8, Java 11, Spring, Hazelcast, Kafka, SOAP, REST, Git, Maven, Gradle, GraphQL, Consul]
       - Title: Java Software Developer
         Date: 
           Start: May 2021
