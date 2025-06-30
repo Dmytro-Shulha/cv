@@ -26,10 +26,13 @@
                 </div>
                 {{ range .Positions }}
                 <div class="experience__job">
+                    {{ if or .Title .Date.Start .Date.End }}
                     <div class="experience__subheader">
+                        {{ if .Title }} 
                         <h3 class="experience__position">
                             {{ .Title | safeHTML}}
                         </h3>
+                        {{end}}
                         {{ if .Date }}
                         <h3 class="experience__date">
                             <span class="experience__date__duration"></span>
@@ -38,11 +41,13 @@
                         </h3>
                         {{ end }}
                     </div>
+                    {{ end }}
                     <ul>
                         {{ range .Details }}
                         <li class="experience__bullet">{{ . }}</li>
                         {{ end }}
                     </ul>
+                    {{if .Badges }}
                     <div class="experience__badges">
                         <ul>
                             {{ range .Badges }}
@@ -50,6 +55,7 @@
                             {{ end }}
                         </ul>
                     </div>
+                    {{ end }}
                 </div>
                 {{ end }}
             </div>

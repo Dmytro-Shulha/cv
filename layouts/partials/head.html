@@ -16,10 +16,8 @@
     {{ $luxon := resources.Get "js/deps/luxon.min.js" }}
     <script src="{{$luxon.Permalink}}" type="text/javascript"></script>
     
-    {{/*  {{ $mermaid := resources.Get "js/deps/mermaid.esm.min.mjs" }}
-    <script src="{{$mermaid.Permalink}}" type="module">
-        import mermaid from './js/deps/mermaid.esm.min.mjs';
-    </script>   */}}
+    {{ $mermaid := resources.Get "js/deps/mermaid.min.js" }}
+    <script src="{{$mermaid.Permalink}}" type="text/javascript"></script>
 
     {{ $experience := resources.Get "js/_experience.js" }}
     <script type="module" src="{{$experience.Permalink}}" type="text/javascript"></script>

@@ -8,11 +8,6 @@
         {{- block "main" . }}{{- end }}
     </div>
     {{- partial "footer.html" . -}}
-    <script type="module">
-      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
-      mermaid.initialize({ startOnLoad: true });
-      console.log('Mermaid initialized');
-    </script>
     {{ if .Store.Get "hasMermaid" }}
     {{ end }}
 </body>
